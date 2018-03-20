@@ -1,0 +1,67 @@
+#include <iostream>
+#include <string>
+#include <new>
+#include <stdlib.h>
+
+using namespace std;
+
+void limpaTela(){
+    system("CLS");
+}
+
+int main() {
+    int funcaoDesejada = 1;
+    
+    while (funcaoDesejada < 10 && funcaoDesejada > 0){
+        cout << "Operacoes \n\n";
+        cout << "1. Insercao de um Node no inicio da lista\n";
+        cout << "2. Insercao de um Node no fim da lista\n";
+        cout << "3. Insercao de um Node na posicao 'N' da lista\n";
+        cout << "4. Retirar um Node do inicio da lista\n";
+        cout << "5. Retirar um Node no fim da lista\n";
+        cout << "6. Retirar um Node na posicao 'N' da lista\n";
+        cout << "7. Procurar de um Node com campo RG\n";
+        cout << "8. Imprimir lista\n";
+        cout << "9. Sair do sistema\n";
+        cout << "\n\nDigite a opcao desejada e pressione ENTER\n";
+        cout << ">> ";
+        
+        cin >> funcaoDesejada;
+        
+        limpaTela();
+        
+        switch(funcaoDesejada){
+            case 1:
+                cout << "Opcao 1";
+                break;
+            case 2:
+                cout << "Opcao 2";
+                break;
+            case 3:
+                cout << "Opcao 3";
+                break;
+            case 4:
+                cout << "Opcao 4";
+                break;
+            case 5:
+                cout << "Opcao 5";
+                break;
+            case 6:
+                cout << "Opcao 6";
+                break;
+            case 7:
+                cout << "Opcao 7";
+                break;
+            case 8:
+                cout << "Opcao 8";
+                break;
+            case 9:
+                cout << "Opcao 9";
+                break;
+            default:
+                break;
+        }
+        
+    } 
+    return 0;
+}
